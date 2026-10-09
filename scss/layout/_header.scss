@@ -1,0 +1,24 @@
+// =========================================================
+// Header
+// =========================================================
+@use '../abstracts' as *;
+
+header {
+    @include container;
+    padding-top: $space-4xl;
+    padding-bottom: $space-2xl;
+    border-bottom: 1px solid $line;
+
+    > p {
+        @include mono-text(0.95rem);
+
+        &::before {
+            content: "$ whoami » ";
+            color: $accent-strong;
+        }
+    }
+
+    @include respond-to('mobile') {
+        padding: $space-2xl $space-md 2rem;
+    }
+}

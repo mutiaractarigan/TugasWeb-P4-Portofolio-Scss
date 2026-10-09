@@ -1,0 +1,30 @@
+// =========================================================
+// Navigasi utama
+// =========================================================
+@use '../abstracts' as *;
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem $space-lg;
+        padding: 0;
+        margin: $space-xl 0 0;
+        font-family: $font-mono;
+        font-size: 0.9rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-muted;
+        padding: $space-2xs 0.1rem;
+        border-bottom: 2px solid transparent;
+
+        &:hover,
+        &:focus-visible {
+            color: $accent;
+            border-bottom-color: $accent;
+        }
+    }
+}

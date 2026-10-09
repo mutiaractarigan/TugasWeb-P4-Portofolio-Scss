@@ -1,0 +1,21 @@
+// =========================================================
+// Tombol
+// =========================================================
+@use '../abstracts' as *;
+
+button[type="submit"] {
+    font-family: $font-mono;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: $ink-950;
+    background: $accent;
+    border: none;
+    border-radius: $radius;
+    padding: 0.75rem $space-lg;
+    cursor: pointer;
+    @include transition(background-color);
+
+    &:hover {
+        background: $accent-strong;
+    }
+}

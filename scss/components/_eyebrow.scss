@@ -1,0 +1,12 @@
+// =========================================================
+// Label eyebrow ala komentar kode ("// 01")
+// =========================================================
+@use '../abstracts' as *;
+
+.eyebrow {
+    display: inline-block;
+    @include mono-text(0.6em);
+    font-weight: 500;
+    margin-right: 0.6em;
+    vertical-align: middle;
+}

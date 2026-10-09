@@ -1,0 +1,62 @@
+// =========================================================
+// Form kontak
+// =========================================================
+@use '../abstracts' as *;
+
+// Tipe input yang bentuknya sama seperti textarea
+$text-field-types: text, email, date;
+
+form {
+    max-width: $form-maxw;
+
+    div {
+        margin-bottom: $space-md;
+    }
+}
+
+label {
+    display: block;
+    @include mono-text(0.85rem);
+    margin-bottom: $space-xs;
+}
+
+// Placeholder untuk input teks & textarea (dipakai via @extend)
+%text-field {
+    width: 100%;
+    background: $ink-900;
+    border: 1px solid $line;
+    border-radius: $radius;
+    color: $text-main;
+    font-family: $font-sans;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.8rem;
+
+    &:focus {
+        border-color: $accent;
+    }
+}
+
+@each $type in $text-field-types {
+    input[type="#{$type}"] {
+        @extend %text-field;
+    }
+}
+
+textarea {
+    @extend %text-field;
+    resize: vertical;
+}
+
+input[type="color"] {
+    width: 56px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid $line;
+    border-radius: $radius;
+    background: $ink-900;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: $accent;
+}

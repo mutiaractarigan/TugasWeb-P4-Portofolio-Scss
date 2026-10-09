@@ -1,0 +1,54 @@
+// =========================================================
+// Tipografi: heading, paragraf, link, fokus
+// =========================================================
+@use 'sass:color';
+@use '../abstracts' as *;
+
+h1,
+h2,
+h3 {
+    font-family: $font-mono;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.6em;
+    color: $white;
+    letter-spacing: -0.01em;
+}
+
+// Ukuran tiap heading diambil dari map $heading-sizes
+@each $tag, $size in $heading-sizes {
+    #{$tag} {
+        font-size: $size;
+    }
+}
+
+h3 {
+    color: $accent;
+}
+
+p {
+    margin: 0 0 1em;
+    color: $text-main;
+}
+
+a {
+    color: $accent;
+    text-decoration: underline;
+    text-decoration-color: color.change($accent, $alpha: 0.35);
+    text-underline-offset: 3px;
+    @include transition(text-decoration-color, color);
+
+    &:hover {
+        text-decoration-color: $accent;
+    }
+}
+
+// Fokus keyboard harus selalu terlihat jelas
+a,
+button,
+input,
+textarea {
+    &:focus-visible {
+        @include focus-ring;
+    }
+}

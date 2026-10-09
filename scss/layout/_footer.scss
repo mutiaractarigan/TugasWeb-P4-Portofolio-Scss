@@ -1,0 +1,12 @@
+// =========================================================
+// Footer
+// =========================================================
+@use '../abstracts' as *;
+
+footer {
+    @include container;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    @include mono-text(0.8rem);
+    text-align: center;
+}

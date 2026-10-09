@@ -1,0 +1,24 @@
+// =========================================================
+// Halaman utama — kartu Keahlian & Portofolio
+// =========================================================
+@use '../abstracts' as *;
+
+#keahlian,
+#portofolio {
+    article {
+        @include card;
+        margin-bottom: $space-md;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include respond-to('mobile') {
+            padding: $space-md;
+        }
+    }
+}
+
+#portofolio article p:last-child {
+    margin-bottom: 0;
+}

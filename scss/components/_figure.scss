@@ -1,0 +1,23 @@
+// =========================================================
+// Figure — foto profil + caption
+// =========================================================
+@use '../abstracts' as *;
+
+figure {
+    margin: 0 0 $space-lg;
+    display: inline-block;
+
+    img {
+        display: block;
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: $radius;
+        border: 1px solid $line;
+    }
+}
+
+figcaption {
+    margin-top: $space-sm;
+    @include mono-text(0.8rem);
+}

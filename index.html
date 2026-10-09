@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Dolor — Landing Page Pribadi</title>
+    <meta name="description" content="Landing page pribadi Lorem Ipsum Dolor, mahasiswa Ilmu Komputer yang menampilkan profil, keahlian web development, dan portofolio project.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lorem Ipsum Dolor — Landing Page Pribadi">
+    <meta property="og:description" content="Landing page pribadi Lorem Ipsum Dolor, mahasiswa Ilmu Komputer yang menampilkan profil, keahlian web development, dan portofolio project.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Lorem+Ipsum+Dolor">
+
+    <link rel="stylesheet" href="/scss/main.scss">
+</head>
+<body>
+
+    <header>
+        <h1>Portofolio</h1>
+        <p>Mahasiswa Ilmu Komputer &amp; Front-End Developer Pemula</p>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="tentang" aria-labelledby="tentang-heading">
+            <h2 id="tentang-heading"><span class="eyebrow">// 01</span> Tentang Saya</h2>
+
+            <figure>
+                <img src="muti.jpeg"
+                     alt="Foto profil Lorem Ipsum Dolor, tersenyum menghadap kamera"
+                     width="300" height="300">
+                <figcaption>Portofolio — diambil pada <time datetime="2026-08-01">1 Agustus 2026</time></figcaption>
+            </figure>
+
+            <p>
+                Saya adalah mahasiswa semester 3 Program Studi Ilmu Komputer di Universitas Negeri Medan,
+                dengan minat besar pada pengembangan web dan desain antarmuka. Saya senang mempelajari
+                hal baru, terutama seputar HTML, CSS, dan JavaScript, serta bagaimana membangun
+                pengalaman pengguna yang rapi dan mudah diakses.
+            </p>
+            <p>
+                Di luar perkuliahan, saya sering mengerjakan proyek pribadi kecil untuk mengasah
+                kemampuan coding, mengikuti workshop, dan sesekali berkontribusi pada proyek
+                open-source. Halaman ini dibuat sebagai bagian dari Tugas Rutin 1 mata kuliah
+                Pemrograman Web.
+            </p>
+        </section>
+
+        <section id="keahlian" aria-labelledby="keahlian-heading">
+            <h2 id="keahlian-heading"><span class="eyebrow">// 02</span> Keahlian</h2>
+
+            <article>
+                <h3>HTML &amp; CSS</h3>
+                <p>Terbiasa menyusun struktur halaman yang semantik dan mengatur tampilan responsif dengan CSS, termasuk Flexbox dan Grid.</p>
+            </article>
+
+            <article>
+                <h3>JavaScript Dasar</h3>
+                <p>Memahami logika pemrograman, manipulasi DOM, dan validasi formulir sederhana menggunakan JavaScript.</p>
+            </article>
+
+            <article>
+                <h3>Version Control (Git &amp; GitHub)</h3>
+                <p>Terbiasa menggunakan Git untuk melacak perubahan kode dan GitHub untuk menyimpan serta membagikan proyek.</p>
+            </article>
+        </section>
+
+        <section id="portofolio" aria-labelledby="portofolio-heading">
+            <h2 id="portofolio-heading"><span class="eyebrow">// 03</span> Portofolio Project</h2>
+
+            <article>
+                <h3>Aplikasi Pencatat Tugas Kuliah</h3>
+                <p>
+                    Aplikasi web sederhana untuk mencatat dan mengelola tugas kuliah berdasarkan
+                    mata kuliah dan tenggat waktu, dibangun dengan HTML, CSS, dan JavaScript.
+                </p>
+                <p><a href="#" target="_blank" rel="noopener">Lihat detail project &rarr;</a></p>
+            </article>
+
+            <article>
+                <h3>Website Profil Organisasi Kampus</h3>
+                <p>
+                    Landing page untuk organisasi kemahasiswaan, menampilkan profil, program
+                    kerja, dan formulir pendaftaran anggota baru secara daring.
+                </p>
+                <p><a href="#" target="_blank" rel="noopener">Lihat detail project &rarr;</a></p>
+            </article>
+
+            <article>
+                <h3>Galeri Foto Responsif</h3>
+                <p>
+                    Galeri foto dengan tata letak grid yang menyesuaikan ukuran layar, dilengkapi
+                    fitur pencarian dan filter kategori sederhana.
+                </p>
+                <p><a href="#" target="_blank" rel="noopener">Lihat detail project &rarr;</a></p>
+            </article>
+        </section>
+
+        <section id="kontak" aria-labelledby="kontak-heading">
+            <h2 id="kontak-heading"><span class="eyebrow">// 04</span> Hubungi Saya</h2>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="nama">Nama Lengkap</label><br>
+                    <input type="text" id="nama" name="nama" required minlength="3"
+                           placeholder="Masukkan nama lengkap Anda">
+                </div>
+
+                <div>
+                    <label for="email">Alamat Email</label><br>
+                    <input type="email" id="email" name="email" required
+                           placeholder="nama@email.com">
+                </div>
+
+                <div>
+                    <label for="tanggal_lahir">Tanggal Lahir</label><br>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                </div>
+
+                <div>
+                    <label for="warna_favorit">Warna Favorit</label><br>
+                    <input type="color" id="warna_favorit" name="warna_favorit" value="#4b6ea8">
+                </div>
+
+                <div>
+                    <label for="tingkat_minat">Tingkat Minat Kolaborasi (1&ndash;10)</label><br>
+                    <input type="range" id="tingkat_minat" name="tingkat_minat" min="1" max="10" value="5">
+                </div>
+
+                <div>
+                    <label for="pesan">Pesan</label><br>
+                    <textarea id="pesan" name="pesan" rows="5" required minlength="10"
+                              placeholder="Tulis pesan, pertanyaan, atau tawaran kolaborasi Anda di sini..."></textarea>
+                </div>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <aside aria-labelledby="aside-heading">
+            <h2 id="aside-heading"><span class="eyebrow">note</span> Info Tambahan</h2>
+            <p>
+                Halaman ini masih terus diperbarui seiring bertambahnya pengalaman dan
+                proyek baru. Terima kasih sudah berkunjung — jangan ragu untuk menghubungi
+                saya lewat formulir di atas jika ingin berdiskusi atau berkolaborasi.
+            </p>
+            <p>Terakhir diperbarui: <time datetime="2026-08-25">25 Agustus 2026</time></p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; <time datetime="2026">2026</time> Mutiara Chalista Tarigan. Semua hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>

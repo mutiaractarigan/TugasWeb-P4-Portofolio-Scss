@@ -1,0 +1,17 @@
+// =========================================================
+// Aside — info tambahan
+// =========================================================
+@use '../abstracts' as *;
+
+aside {
+    padding: $space-2xl 0;
+    color: $text-muted;
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    time {
+        @include mono-text($color: $accent-warn);
+    }
+}

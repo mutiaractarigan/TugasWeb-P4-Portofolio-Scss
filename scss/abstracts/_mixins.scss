@@ -1,0 +1,52 @@
+// =========================================================
+// Mixins — potongan style yang dipakai ulang
+// =========================================================
+@use 'sass:list';
+@use 'sass:map';
+@use 'variables' as *;
+
+// Media query berdasarkan nama breakpoint di $breakpoints
+@mixin respond-to($name) {
+    @media (max-width: map.get($breakpoints, $name)) {
+        @content;
+    }
+}
+
+// Label kecil bergaya monospace (eyebrow, label form, caption, dsb.)
+@mixin mono-text($size: null, $color: $text-muted) {
+    font-family: $font-mono;
+    font-size: $size;
+    color: $color;
+}
+
+// Kartu gelap dengan border tipis
+@mixin card($padding: $space-lg $space-xl) {
+    background: $ink-900;
+    border: 1px solid $line;
+    border-radius: $radius;
+    padding: $padding;
+}
+
+// Outline fokus keyboard yang selalu terlihat jelas
+@mixin focus-ring($color: $accent) {
+    outline: 2px solid $color;
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
+// Transisi singkat untuk beberapa properti sekaligus
+@mixin transition($props...) {
+    $list: ();
+    @each $prop in $props {
+        $list: list.append($list, $prop $transition-fast, comma);
+    }
+    transition: $list;
+}
+
+// Lebar konten di tengah halaman
+@mixin container($padding-x: $space-lg) {
+    max-width: $maxw;
+    margin: 0 auto;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+}

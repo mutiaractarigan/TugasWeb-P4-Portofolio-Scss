@@ -1,0 +1,40 @@
+// =========================================================
+// Reset dasar
+// =========================================================
+@use '../abstracts' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: $ink-950;
+    background-image:
+        linear-gradient($line 1px, transparent 1px),
+        linear-gradient(90deg, $line 1px, transparent 1px);
+    background-size: $grid-size $grid-size;
+    background-attachment: fixed;
+    background-position: -1px -1px;
+    color: $text-main;
+    font-family: $font-sans;
+    line-height: 1.65;
+    font-size: 16px;
+}

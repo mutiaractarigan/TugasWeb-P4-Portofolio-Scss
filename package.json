@@ -1,0 +1,18 @@
+{
+  "name": "tugasweb-pertemuan4-portofolio-scss",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Konversi CSS Portofolio (Pertemuan 2) ke SCSS dengan struktur 7-1 pattern",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass scss/main.scss css/style.css --no-source-map",
+    "sass:watch": "sass --watch scss/main.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.105.1",
+    "vite": "^8.3.4"
+  }
+}

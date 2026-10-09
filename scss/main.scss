@@ -1,0 +1,22 @@
+// =========================================================
+// Landing Page Pribadi — main.scss
+// Tema: "code editor" — cocok untuk konteks mahasiswa
+// Pemrograman Web. Font monospace untuk label/eyebrow,
+// sans-serif untuk isi agar tetap mudah dibaca.
+//
+// Struktur 7-1 pattern:
+//   abstracts/  variables & mixins (tidak menghasilkan CSS)
+//   vendors/    CSS pihak ketiga
+//   base/       reset & tipografi
+//   layout/     header, nav, main, aside, footer
+//   components/ eyebrow, figure, form, button
+//   pages/      style khusus halaman
+//   themes/     tema warna
+// =========================================================
+
+@use 'vendors';
+@use 'themes';
+@use 'base';
+@use 'layout';
+@use 'components';
+@use 'pages';

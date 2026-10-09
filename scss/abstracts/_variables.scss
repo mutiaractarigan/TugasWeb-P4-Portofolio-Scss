@@ -1,0 +1,66 @@
+// =========================================================
+// Variables — warna, tipografi, spacing, layout
+// =========================================================
+
+// ---------- Warna ----------
+$ink-950: #0E1416;
+$ink-900: #141B1F;
+$ink-800: #1B2429;
+$ink-700: #26323A;
+$line: #33424B;
+$text-main: #E7EDEF;
+$text-muted: #93A5AD;
+$accent: #6EE7B7;        // hijau terminal
+$accent-strong: #34D399;
+$accent-warn: #F2B84B;   // amber untuk kontras kedua
+$white: #FFFFFF;
+
+// Map warna — di-loop (@each) jadi CSS custom properties di themes/_dark.scss
+$colors: (
+    'ink-950': $ink-950,
+    'ink-900': $ink-900,
+    'ink-800': $ink-800,
+    'ink-700': $ink-700,
+    'line': $line,
+    'text-main': $text-main,
+    'text-muted': $text-muted,
+    'accent': $accent,
+    'accent-strong': $accent-strong,
+    'accent-warn': $accent-warn,
+);
+
+// ---------- Tipografi — font sistem bawaan OS, tidak perlu internet ----------
+$font-mono: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', Consolas, Menlo, 'Courier New', monospace;
+$font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+// Ukuran heading — di-loop (@each) di base/_typography.scss
+$heading-sizes: (
+    'h1': clamp(2rem, 5vw, 3rem),
+    'h2': clamp(1.35rem, 3vw, 1.75rem),
+    'h3': 1.1rem,
+);
+
+// ---------- Spacing ----------
+$space-2xs: 0.35rem;
+$space-xs: 0.4rem;
+$space-sm: 0.6rem;
+$space-md: 1.25rem;
+$space-lg: 1.5rem;
+$space-xl: 1.75rem;
+$space-2xl: 2.5rem;
+$space-3xl: 3.5rem;
+$space-4xl: 4rem;
+
+// ---------- Layout ----------
+$maxw: 880px;
+$form-maxw: 520px;
+$radius: 6px;
+$grid-size: 48px;
+
+// Breakpoint
+$breakpoints: (
+    'mobile': 600px,
+);
+
+// ---------- Motion ----------
+$transition-fast: 0.15s ease;

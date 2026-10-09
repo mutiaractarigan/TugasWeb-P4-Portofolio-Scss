@@ -1,0 +1,12 @@
+// =========================================================
+// Tema gelap "code editor"
+// Semua warna di-ekspos juga sebagai CSS custom properties
+// supaya bisa diakses dari JavaScript / DevTools.
+// =========================================================
+@use '../abstracts' as *;
+
+:root {
+    @each $name, $value in $colors {
+        --#{$name}: #{$value};
+    }
+}

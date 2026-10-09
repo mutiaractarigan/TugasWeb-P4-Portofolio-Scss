@@ -1,0 +1,21 @@
+// =========================================================
+// Main & section
+// =========================================================
+@use '../abstracts' as *;
+
+main {
+    @include container;
+
+    @include respond-to('mobile') {
+        padding: 0 $space-md;
+    }
+}
+
+section {
+    padding: $space-3xl 0;
+    border-bottom: 1px solid $line;
+
+    @include respond-to('mobile') {
+        padding: $space-2xl 0;
+    }
+}
